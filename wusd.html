@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title class="title">The Web3 Project | Taking online further beyond</title>
+
+   <!-- ------- fav-icon code ---------- -->
+
+   <link rel="shortcut icon" href="images/overview-1.svg" />
+   
+   <!-- --- style css file link --- -->
+
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body class="body">
+   
+   <div class="tooltipdiv"></div>
+   <div class="tooltipdiv1"></div>
+   <div class="clipboard"><img src="images/Union.svg" alt="Union" />&ThinSpace;&ThinSpace;<span>Copied to clipboard</span></div>
+   <!-- ------ POP-UP DIV START ------ -->
+   <div class="allmaindiv">
+      <div class="secondmaindiv">
+      <div class="popup-main">
+         <div class="popup-cntdiv">
+            <div class="popup-firstdiv">
+               <div class="share-cnt-div">
+                  <div class="share">
+                     <span><img src="images/headicon.png" alt="offer"></span>
+                     <span class="shareit">Share it</span>
+                  </div>
+                  <div class="close">
+                     <span><img src="images/close-circle.png" alt="close-circle" class="close-circle" onclick="clearModalData()"></span>
+                  </div>
+               </div>
+               <div class="share-icon-div">
+                  <span class="copy-img-cnt">Click here to <span class="CopyToImg" onclick="copyImg()">Copy</span> this image and spreadthis to everywhere</span>
+                  &ThinSpace;&ThinSpace;&ThinSpace;&ThinSpace;
+                  <div class="popup-share-img">
+                     <span><img src="images/twt.png" class="Social-icons-img" alt="offer"></span>
+                     &ThinSpace;&ThinSpace;
+                     <span><img src="images/insta.png" class="Social-icons-img" alt="offer"></span>
+                     &ThinSpace;&ThinSpace;
+                     <span><img src="images/fcbk.png" class="Social-icons-img" alt="offer"></span>
+               </div>
+               </div>
+               <hr class="popup-line">
+            </div>
+            <div class="popup-imgdiv">
+               <img src="" alt="" id="dataimg" height="100%" width="100%">
+            </div>
+         </div>
+      </div>
+      </div>
+   </div>
+
+   <!-- ------ POP-UP DIV END ------ -->
+   <div class="bg"></div>
+   <div class="wrapper">
+      <div class="side-nav" id="side-nav">
+      </div>
+      <div class="main-content-div">
+
+         <div class="upper-div" id="upper-div">
+         </div>
+
+        <!-- *********************************************** -->
+         <!-- WUSD Start -->
+         <!-- ******************************************** -->
+
+         <div class="container-div tab-active animate__animated animate__fadeIn">
+            <div class="offer background-box">
+               <span class="wusd-img"><img src="images/headicon.png" alt="offer"></span>
+               <div class="same-p p-s-para w-3-para wr-offer-p wusd-cnt">
+                  <span class="w-3-para-1">$WUSD Contract:</span><span
+                     class="set-p-s-para" id="content-copy2" onclick="window.open('https://bscscan.com/token/0x0F42185278864e22e9b2Cc0bac43A17D5c7a6A16','_blank')">0x0F42185278864e22e9b2Cc0bac43A17D5c7a6A16</span> <span
+                     class="p-s-c-img w-3-img"><i class="imp-copy1" id="copytext3"></i></span>
+               </div>
+            </div>
+            <section class="over-div wr-over-div">
+               <div class="over-main">
+                  <div class="over-box-div">
+                     <div class="over-box background-box for-wrap">
+                        <img src="images/safety-1.svg" alt="safety-1">
+                        <h3 id="liqWusdBusd">0.000</h3>
+                        <p class="same-p">BUSD liquidity<i class="info-icon tooltip mobToolTip"
+                              tooltip-data="BUSD amount in WUSD contract for safety, busd liquidity size will be limited it will be refilled periodically"></i>
+                        </p>
+                     </div>
+                     <div class="over-box background-box for-wrap">
+                        <img src="images/safety-2.svg" alt="safety-2">
+                        <h3 id="liqWusdWusd">0</h3>
+                        <p class="same-p">WUSD liquidity<i class="info-icon tooltip"
+                              tooltip-data="WUSD total supply"></i></p>
+                     </div>
+                     <div class="over-box background-box for-wrap">
+                        <img src="images/safety-2.svg" alt="safety-2">
+                        <h3 id="wusdPrice">0</h3>
+                        <p class="same-p">WUSD Price <i class="info-icon tooltip mobToolTip" position="right"
+                              tooltip-data="80% BUSD amount in WUSD contract / WUSD total supply price range = 0.9 - 1.1"></i>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+
+
+            <section class="wusd-section">
+
+               <!-- 1 -->
+
+               <div class="swap-sell-section wusd-left background-box">
+                  <div class="wusd-part-1">
+                     <h2>Buy/Sell $WUSD in instance<span class="same-p">Rules <i class="info-icon tooltip mobToolTip" position="right"
+                              tooltip-data="1% tax for buy/sell price stays in 0.9-1.1 if price stays in 0.97-1.03, it is at peg if price is not in 0.97-1.03, it is depegged if depegged, you can trade bond (coming soon)"></i></span>
+                     </h2>
+                     <div class="main-p">
+                        <p>We will provide methods to utilize WUSD (ecosystem, BUSD change, etc)</p>
+                     </div>
+                     <div class="main-p">
+                        <p>BUSD liquidity is paused for a while to check potential issues</p>
+                     </div>
+                     <div class="main-p">
+                        <p>It will be resumed after the issues are solved</p>
+                     </div>
+                     <div class="wusd-link-1">
+                        <a id="run-busd-approve-wusd" class="same-type-btn btnLoadAnimation" href="#">$BUSD Approve to Buy</a>
+                        <a id="run-wusd-approve-wusd" class="same-type-btn btnLoadAnimation" href="#">$WUSD Approve to Sell</a>
+                     </div>
+                  </div>
+                  <div class="input-field-div wusd">
+                     <div class="input-text-div">
+                        <div class="upper-part">
+                           <span class="upper-left">From</span>
+                           <span class="upper-right">Balance: <span id="wusd-balance-input">0.000</span></span>
+                        </div>
+                        <div class="bottom-part">
+                           <input id="wusd-input" type="text" class="input-w" placeholder="0.00" name="fromTokenAmount" inputmode="decimal" autocomplete="off">
+                           <div class="curr-div">
+                              <span id="wusd-symbol-input">BUSD</span>
+                              <span onclick="maxValueWusdInput()" class="bottom-txt">Max</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="wusd-change" class="swap-div">
+                        <span class="swap-icon"><img src="images/swap.png"  alt="swap-icon"></span>
+                     </div>
+                     <div class="input-text-div">
+                        <div class="upper-part">
+                           <span class="upper-left">To</span>
+                           <span class="upper-right">Balance: <span id="wusd-balance-output">0.000</span></span>
+                        </div>
+                        <div class="bottom-part">
+                           <input id="wusd-output" type="text" placeholder="0.00" name="toTokenAmount" inputmode="decimal" autocomplete="off">
+                           <div class="curr-div twp-div">
+                              <span id="wusd-symbol-output">WUSD</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="wusd-run" class="go-div">
+                        <a id="wusd-run-name" class="go-link" href="#">Buy
+                           <!-- <i class="go-icon"></i> -->
+                        </a>
+                     </div>
+                  </div>
+
+               </div>
+
+               <!-- 2 -->
+               <div class="swap-sell-section wusd-right background-box">
+
+                  <div class="wusd-tabs">
+                     <ul class="wusd-tab-ul">
+                        <li class="wusd-tab-li wusd-tab-active" data-tab="wusd-tab-1"><span>Stake 1</span></li>
+                        <li class="wusd-tab-li" data-tab="wusd-tab-2"><span>Stake 2</span></li>
+                        <li class="wusd-tab-li" data-tab="wusd-tab-3"><span>Stake 3</span></li>
+                     </ul>
+                  </div>
+
+                  <div class="wusd-content wusd-tab-active" id="wusd-tab-1">
+                     <h2>Stake $WUSD And get $TWEP</h2>
+                     <p>TWEP Reward Amount = Staked $WUSD Amount * Staked Days / $TWEP Price at unstake</p>
+                     <a id="run-wusd-approve-lock1" href="#" class="same-type-btn btnLoadAnimation">$WUSD Approve to Stake</a>
+                     <div class="input-field-div wusd">
+                        <div class="input-text-div">
+                           <div class="upper-part">
+                              <span class="upper-right">Balance: <span id="wusdBalance">0.000</span></span>
+                           </div>
+                           <div class="bottom-part">
+                              <input  id="wusd-input1" type="text" placeholder="0.00" name="fromTokenAmount" inputmode="decimal" autocomplete="off" class="input-w">
+                              <div class="curr-div">
+                                 <span class="curr-logo wusd-l-ico"></span>
+                                 <span onclick="maxValueWusdInput()" class="bottom-txt">Max</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="run-stake1" class="go-div go-div-btn">
+                           <a id="lock-name" class="go-link" href="#">Stake
+                              <!-- <i class="go-icon"></i> -->
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="wusd-content" id="wusd-tab-2">
+                     <h2>Stake $WUSD And get $TWEP</h2>
+                     
+                     <a id="run-wusd-approve-lock2" href="#" class="same-type-btn btnLoadAnimation">$WUSD Approve to Stake</a>
+                     <div class="input-field-div wusd">
+                        <div class="input-text-div">
+                           <div class="upper-part">
+                              <span class="upper-right">Balance:<span id="wusdBalance">0.000</span></span>
+                           </div>
+                           <div class="bottom-part">
+                              <input id="wusd-input2" type="text"  placeholder="0.00" name="fromTokenAmount" inputmode="decimal" autocomplete="off" value="" class="input-w">
+                              <div class="curr-div">
+                                 <span class="curr-logo wusd-l-ico"></span>
+                                 <span onclick="maxValueWusdInput()" class="bottom-txt">Max</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="run-stake2" class="go-div go-div-btn">
+                           <a id="lock-name" class="go-link" href="#">Stake
+                              <!-- <i class="go-icon"></i> -->
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="wusd-content" id="wusd-tab-3">
+                     <h2>Stake $WUSD And get $TWEP</h2>
+                     
+                     <a id="run-wusd-approve-lock3" href="#" class="same-type-btn btnLoadAnimation">$WUSD Approve to Stake</a>
+                     <div class="input-field-div wusd">
+                        <div class="input-text-div">
+                           <div class="upper-part">
+                              <span class="upper-right">Balance: <span id="wusdBalance">0.000</span></span>
+                           </div>
+                           <div class="bottom-part">
+                              <input id="wusd-input3" type="text" placeholder="0.00" name="fromTokenAmount" inputmode="decimal" autocomplete="off" value=""class="input-w">
+                              <div class="curr-div">
+                                 <span class="curr-logo wusd-l-ico"></span>
+                                 <span onclick="maxValueWusdInput()" class="bottom-txt">Max</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="run-stake3" class="go-div go-div-btn">
+                           <a id="lock-name" class="go-link" href="#">Stake
+                              <!-- <i class="go-icon"></i> -->
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+               </div>
+
+            </section>
+
+            <section class="table-section wusd">
+               <div class="table-div">
+                  <ul class="th background-box">
+                     <li class="td-1">Staked Amount</li>
+                     <li class="td-1">Staked duration</li>
+                     <li class="td-1 wusd">Reward duration <i class="info-icon tooltip wusd mobToolTip" position="right"
+                           tooltip-data="For safety, reward up to 10 $TWEP can be unstaked"></i></li>
+                     <li class="td-1 no-dsply">Action</li>
+                  </ul>
+
+                  <ul class="main">
+                     <li class="tr-td-1"><span id="stakedAmount1">0.000</span> WUSD</p>
+                     </li>
+                     <li class="tr-td-1"><span id="stakedDuration1">0d 0h 0m 0s</span></p>
+                     </li>
+                     <li class="tr-td-1"><span id="rewardAmount1">0.000</span> TWEP</p>
+                     </li>
+                     <li id="run-unstake1" class="unstake"><a id="claim-name1" href="#">Unstake</a></li>
+                  </ul>
+
+                  <ul class="main">
+                     <li class="tr-td-1"><span id="stakedAmount2">0.000</span> WUSD</p>
+                     </li>
+                     <li class="tr-td-1"><span id="stakedDuration2">0d 0h 0m 0s</span></p>
+                     </li>
+                     <li class="tr-td-1"><span id="rewardAmount2">0.000</span> TWEP</p>
+                     </li>
+                     <li id="run-unstake2" class="unstake"><a id="claim-name2" href="#">Unstake</a></li>
+                  </ul>
+
+                  <ul class="main">
+                     <li class="tr-td-1"><span id="stakedAmount3">0.000</span> WUSD</p>
+                     </li>
+                     <li class="tr-td-1"><span id="stakedDuration3">0d 0h 0m 0s</span></p>
+                     </li>
+                     <li class="tr-td-1"><span id="rewardAmount3">0.000</span> TWEP</p>
+                     </li>
+                     <li id="run-unstake3" class="unstake"><a id="claim-name3" href="#">Unstake</a></li>
+                  </ul>
+               </div>
+            </section>
+         </div>
+
+
+         <!-- *********************************************** -->
+         <!-- WUSD End -->
+         <!-- ******************************************** -->
+      </div>
+   </div>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js" integrity="sha512-wUa0ktp10dgVVhWdRVfcUO4vHS0ryT42WOEcXjVVF2+2rcYBKTY7Yx7JCEzjWgPV+rj2EDUr8TwsoWF6IoIOPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="text/javascript" src="js/index.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/rangeslider.js@2.3.3/dist/rangeslider.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/upfinity-main/TheWeb3ProjectAssets/js/web3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/upfinity-main/TheWeb3ProjectAssets/js/detect-provider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/upfinity-main/TheWeb3ProjectAssets/js/ethers.umd.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="js/base.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/page.js"></script>
+
+  <script>
+
+
+// DOM Elements
+const tabs = select('.tab')
+const tabContents = select('.tabcontent')
+const darkModeSwitch = select('#dark-mode-switch')
+
+// Functions
+const activateTab = tabnum => {
+
+    tabs.forEach( tab => {
+      tab.classList.remove('active')
+    })
+
+    tabContents.forEach( tabContent => {
+        tabContent.classList.remove('active')
+    })
+
+    select('#tab' + tabnum).classList.add('active')
+    select('#tabcontent' + tabnum).classList.add('active')
+    localStorage.setItem('jstabs-opentab', JSON.stringify(tabnum))
+
+}
+
+// Event Listeners
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        activateTab(tab.dataset.tab)
+    })
+})
+
+darkModeSwitch.addEventListener('change', () => {
+    select('body').classList.toggle('darkmode')
+    // localStorage.setItem('jstabs-darkmode', JSON.stringify(!darkmode))
+})
+
+// Retrieve stored data
+let darkmode = JSON.parse(localStorage.getItem('jstabs-darkmode'))
+const opentab =  JSON.parse(localStorage.getItem('jstabs-opentab')) || '3'
+
+// and..... Action!
+if (darkmode === null) {
+  select('body').classList.add('darkmode')
+}
+if (darkmode) {
+    select('body').classList.add('darkmode')
+    select('#dark-mode-switch').checked = 'checked'
+}
+activateTab(opentab)
+
+    async function runGlobal() {
+      await _runGlobal();
+
+      for (let idx of [1, 2, 3]) {
+        select(`#run-stake${idx}`).onclick = async () => { await runStake(idx); };
+        select(`#run-unstake${idx}`).onclick = async () => { await runUnstake(idx); };
+      }
+    }
+
+    async function switchWusd() {
+      await switchTarget(['buy', 'sell'], 'wusd', [handleInputBuyWusd, handleInputSellWusd], [(await gV('busdBalance')), (await gV('wusdBalance'))], [BUSDICONURL, TOKENICONURL], ["BUSD", "WUSD"], [runBuyWusd, runSellWusd]);
+    }
+
+    async function runPersonal() {
+      await _runPersonal();
+
+      {
+        let allowance = await CONTS['busd'].allowance(CURADR, ADRS['wusd']);
+        if (BIGINT(0) < allowance) {
+          select('#run-busd-approve-wusd').classList.add('d-none');
+        } else {
+          select('#run-busd-approve-wusd').onclick = async () => { await approve('busd', ADRS['wusd']); };
+        }
+      }
+
+      {
+        let allowance = await CONTS['wusd'].allowance(CURADR, ADRS['wusd']);
+        if (BIGINT(0) < allowance) {
+          select('#run-wusd-approve-wusd').classList.add('d-none');
+        } else {
+          select('#run-wusd-approve-wusd').onclick = async () => { await approve('wusd', ADRS['wusd']); };
+        }
+      }
+
+
+      {
+        let allowance = await CONTS['wusd'].allowance(CURADR, ADRS['lock']);
+        if (BIGINT(0) < allowance) {
+          select('#run-wusd-approve-lock1').classList.add('d-none');
+          select('#run-wusd-approve-lock2').classList.add('d-none');
+          select('#run-wusd-approve-lock3').classList.add('d-none');
+        } else {
+          select('#run-wusd-approve-lock1').onclick = async () => { await approve('wusd', ADRS['lock']); };
+          select('#run-wusd-approve-lock2').onclick = async () => { await approve('wusd', ADRS['lock']); };
+          select('#run-wusd-approve-lock3').onclick = async () => { await approve('wusd', ADRS['lock']); };
+        }
+      }
+
+      STATES['wusd'] = 'sell';
+      await switchWusd();
+      select('#wusd-change').onclick = async () => { await switchWusd(); };
+
+      for (let idx of [1, 2, 3]) {
+        let rates = [1.1, 1.05, 1];
+
+        let _wusdStakedAmount = await CONTS['lock']._wusdStakedAmount(idx - 1, CURADR);
+        displayText(`#stakedAmount${idx}`, `${COMMA(INT(_wusdStakedAmount / BNBDIV, 3))}`);
+        if (_wusdStakedAmount == 0) {
+          continue;
+        }
+
+        let _wusdStakedTime = await CONTS['lock']._wusdStakedTime(idx - 1, CURADR);
+        let stakedDuration = now - _wusdStakedTime;
+        setInterval(function () {
+          displayText(`#stakedDuration${idx}`, `${INT((stakedDuration / (60*60*24)))}d ${INT((stakedDuration / (60*60)) % 24)}h ${INT((stakedDuration / 60) % 60)}m ${INT(stakedDuration % 60)}s`);
+          stakedDuration = stakedDuration + 1;
+        }, 1000);
+
+        let calWusdReward = await CONTS['lock'].calWusdReward(idx - 1, _wusdStakedAmount, stakedDuration);
+        displayText(`#rewardAmount${idx}`, `${COMMA(INT(calWusdReward / BNBDIV, 3))}`);
+      }
+    }
+
+    (async () => {
+      await runGlobal();
+
+      $('[data-bs-toggle="tooltip"]').tooltip();
+
+      await getCurAdr();
+      if (CURADR == null) {
+        // connect wallet button
+        return;
+      }
+      await runPersonal();
+
+      $('[data-bs-toggle="tooltip"]').tooltip();
+      
+
+
+    })();
+
+
+
+    select('#side-tabs-ul').children[7].classList.add('background-box1');
+  </script>
+    <style>
+
+
+
+    </style>
+   
+   <script>
+    let copyButton2 = select('#copytext3');
+
+copyButton2.addEventListener('click', (event) => {
+  let content2 = select('#content-copy2').textContent;
+  navigator.clipboard.writeText(content2)
+})
+   </script>
+  
+</body>
+
+</html>
