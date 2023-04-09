@@ -215,6 +215,11 @@ async function ERR(err, popup = true) {
 
 
 let P_D = {};
+for (let name of ['web3', 'twep', 'wweb3', 'pweb3', 'xweb3', 'wusd', 'busd', 'miner']) {
+  P_D[`${name}Balance`] = 0;
+  displayText(`#${name}Balance`, `${COMMA(INT(P_D[`${name}Balance`], 3))}`);
+}
+
 let lockedAmount;
 let lockedDuration;
 let totalSupplyPercentage;
