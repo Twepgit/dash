@@ -230,7 +230,8 @@ ABIS['lock'] = [
   "function _unlockTimes(address) view returns (uint256)",
   "function _lastClaims(address) view returns (uint256)",
   
-
+  "function unstake()",
+  "function unstakeMulti(uint)",
   "function calculateReward(uint256, uint256) view returns (uint256)",
 
   "function stakeMulti(uint, uint256, uint256)",
