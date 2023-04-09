@@ -374,7 +374,7 @@
       }
       
       async function switchWrap() {
-         await switchTarget(['wrap', 'unwrap'], 'wrap', [handleInputWrap, handleInputUnwrap], [(await gV('twepBalance')), (await gV('wweb3Balance'))], [TOKENICONURL, TOKENICONURL], ["TWEP", "wWEB3"], [runWrap, runUnwrap]);
+         await switchTarget(['wrap', 'unwrap'], 'wrap', [handleInputWrap, handleInputUnwrap], [P_D['twepBalance'], P_D['wweb3Balance']], [TOKENICONURL, TOKENICONURL], ["TWEP", "wWEB3"], [runWrap, runUnwrap]);
       }
       
 
